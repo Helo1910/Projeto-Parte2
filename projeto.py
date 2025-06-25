@@ -42,12 +42,12 @@ def cor_texto(texto, cor):
         'ciano_escuro': '\033[38;5;32m', # Ciano Escuro
         'cobre': '\033[38;5;130m'} # Cobre
      return cores.get(cor,'') + texto + cores['reset']
-
 print(cor_texto('==== Sistema De Filmes e Séries ====','vermelho_escuro'))
 print('------------------------------------')
 
 
 def cadastrar_filmes():
+    print(cor_texto('CADASTRAR O FILME/SÉRIE✍️✍️','azul_bebe'))
     nome= str(input('Digite o nome do filme ou série que deseja cadastrar: '))
     plataforma= str(input('Qual a plataforma que será usada: '))
     genero= str(input('Qual o gênero: '))
@@ -62,6 +62,7 @@ def cadastrar_filmes():
 
 
 def mostrar_cadastrados():
+    print(cor_texto('VER OS FILME/SÉRIE CADASTRADOS😎', 'azul_bebe'))
     if len(Filmes)==0:
         print(cor_texto('Nenhum filme/série cadastrado.❌❌❌\n','vermelho_escuro'))
         return
@@ -73,6 +74,7 @@ def mostrar_cadastrados():
         numero+=1
 
 def buscar_filmes():
+    print(cor_texto('BUSCAR O FILME/SÉRIE👓👓', 'azul_bebe'))
     movies =str(input("Busque por gênero ou plataforma: ")).lower()
     movies_encontrados=[]
     for filme in Filmes:
@@ -94,7 +96,7 @@ def exibir_menu():
     while True:
         print(cor_texto('==== 🎇Menu Inicial🎇 ====', 'violeta'))
         print(cor_texto('1- ✍️Cadastrar novo Filme ou Série✍️','azul_bebe'))
-        print(cor_texto('2- ✨Buscar por gênero ou plataforma✨ ','azul_bebe'))
+        print(cor_texto('2- 🔎Buscar por gênero ou plataforma🔎 ','azul_bebe'))
         print(cor_texto('3- 😎Ver todos os Filmes e Séries😎','azul_bebe'))
         print(cor_texto('4- Sair👋👋','vermelho'))
 
