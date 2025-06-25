@@ -73,7 +73,7 @@ def mostrar_cadastrados():
         numero+=1
 
 def buscar_filmes():
-    movies =str(input("Busque por gênero ou plataforma: "))
+    movies =str(input("Busque por gênero ou plataforma: ")).lower()
     movies_encontrados=[]
     for filme in Filmes:
         if (movies in filme['genero']) or (movies in filme['plataforma']):
