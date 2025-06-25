@@ -94,7 +94,7 @@ def exibir_menu():
     while True:
         print(cor_texto('==== 🎇Menu Inicial🎇 ====', 'violeta'))
         print(cor_texto('1- ✍️Cadastrar novo Filme ou Série✍️','azul_bebe'))
-        print(cor_texto('2- ✨Buscar por gêneros e plataforma✨ ','azul_bebe'))
+        print(cor_texto('2- ✨Buscar por gênero ou plataforma✨ ','azul_bebe'))
         print(cor_texto('3- 😎Ver todos os Filmes e Séries😎','azul_bebe'))
         print(cor_texto('4- Sair👋👋','vermelho'))
 
